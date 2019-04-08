@@ -1,2 +1,2 @@
-# Project1
-# Hotdog
+# Project 1
+# Whip it Up 
