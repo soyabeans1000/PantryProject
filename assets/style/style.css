@@ -1,0 +1,136 @@
+.nav-link
+{
+	color:grey;
+}
+
+.nav-item
+{
+	color:black;
+}
+
+
+
+body{
+	height: 100%;
+	background-image: url('../images/food_bg.jpeg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.navbar{
+	color: orange;
+	 /* opacity: .8; */
+	font-weight: bolder;
+}
+		 
+.chalkboard{
+	/* height: auto; */
+	/* background-image: url('https://files.slack.com/files-pri/TEF39F7A5-FHLERV1AR/download/4305843.jpg'); */
+	background-color: rgba(0,0,0,0.9)
+
+}
+#title{
+	text-align: center;
+}
+#hungry{
+	/* position: relative;
+	left: 35%; */
+	margin: 0 auto;
+	
+}
+#for-apples{
+	position: relative;
+	left: 15%;
+	margin-top: 9%;
+}
+@media screen and (min-width:849px) and (max-width: 1000px) {
+	#for-apples {
+	  left: 10%;
+	  margin-top: 6.5%;
+	}
+  }
+  @media screen and (min-width:399px) and (max-width: 850px) {
+	#for-apples {
+	  left: 2%;
+	  margin-top: 7.5%;
+	  
+	}
+	#hungry{
+		display: none;
+	}
+  }
+  @media screen and (min-width:535px) and (max-width: 788px){
+	  #hungry{
+		  display:none;
+	  }
+	  #for-apples{
+		  margin-left: 20%;
+		 /* font-size: 20px;
+		 left: 1%; */
+	  }
+  }
+  @media screen and (min-width:200px) and (max-width: 534px){
+	#hungry{
+		display:none;
+	}
+	#for-apples{
+		margin-left: 20%;
+	   font-size: 20px;
+	   left: 1%;
+	}
+}
+
+h1{
+	/* font-family: 'Indie Flower', cursive; */
+	font-family: 'Homemade Apple', cursive;
+	/* font-family: 'Covered By Your Grace', cursive; */
+	color:#ffffff;
+
+}
+
+.containerAll{
+	border-radius:1%;
+	margin-top:4%;
+	margin-bottom: 4%;
+	height: 10%;
+	width:75%;
+	background-color: white;
+	z-index: -1;
+}
+
+/* user input bar */
+.input{
+	margin-top:5%; 
+}
+#item1{
+	background-color: transparent;
+	color: #ffffff;
+	
+}
+
+
+/* buttons will appear under this div */
+#ingredients{
+	opacity: .7;
+	color: #ffffff;
+}
+
+/*  scroll container for recipes  */
+#reciepe_container{
+	height:700px;
+	overflow:auto;
+	text-align: center;		}
+
+.card{
+	display: inline-block;
+	/*padding: 5%;
+	*/width:70%;
+	border-radius:3%;
+	-webkit-border-radius:3%;
+	-moz-border-radius:3%;
+	-ms-border-radius:3%;
+	-o-border-radius:3%;
+}
+.card-title{
+	color: white;
+}
