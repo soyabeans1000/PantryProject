@@ -1,0 +1,105 @@
+.nav-link
+{
+  color:black;
+}
+
+body {
+  height: 100%;
+  background-image: url('../images/pexels-photo-1565982.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  color: black;
+  font-weight: bolder;
+}
+
+/* Bordered form */
+#signInContainer{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-color: white;
+}
+
+#registerContainer {
+  border-radius:1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-color: white;
+  -webkit-border-radius:1%;
+  -moz-border-radius:1%;
+  -ms-border-radius:1%;
+  -o-border-radius:1%;
+}
+
+/* form {
+  border: 3px solid #f1f1f1;
+} */
+  
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+  
+/* Set a style for all buttons */
+#signInSubmit {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+#registerSubmit {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 2%;
+}
+  
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+  
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+  /* Avatar image */
+img.avatar {
+  width: 30%;
+  border-radius: 50%;
+}
+
+
+
+/* DISPLAY 2 */
+/* after submission */
+.headerContainer{
+  text-align: center;
+  padding: 20px;
+}
+.head2{
+  padding: 5
+}
+.check{
+  height: 40px;
+  padding: 20px;
+  margin-bottom: 1%;
+}
