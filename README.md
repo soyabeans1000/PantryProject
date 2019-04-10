@@ -1,12 +1,20 @@
-# Project Title
+# Whip it Up
 
-One Paragraph of project description goes here
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Whip it Up helps users find recipes through the Edamam API if the user wants to cook their own food. If the user does not want to cook they can choose to find a restaurant in the city and state of their choice with a given cuisine.
 
 ## Functionality
+
+### Edamam
+* Enter the items that you want to cook with 
+* Choose the recipe that you want to cook
+
+### Find a Restaurant
+Enter the following 
+* City
+* State
+* Cuisine
+
+Choose the location that sounds good to eat at. 
 
 ## Built With the following API's
 
@@ -16,12 +24,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Authors
 
-* **Sarika Goyal** - [PurpleBooth](https://github.com/soyabeans1000)
-* **Kayla San Filippo** - [PurpleBooth](https://github.com/kaylasf)
-* **Summer Basehart** - [PurpleBooth](https://github.com/summerbasehart)
-* **Mike Anderson** - [PurpleBooth](https://github.com/mjanders6)
+**Sarika Goyal** - [PurpleBooth](https://github.com/soyabeans1000)
+**Kayla San Filippo** - [PurpleBooth](https://github.com/kaylasf)
+**Summer Basehart** - [PurpleBooth](https://github.com/summerbasehart)
+**Mike Anderson** - [PurpleBooth](https://github.com/mjanders6)
 
 
 ## Acknowledgments
 
-* 
+**Whip it Up** - (https://www.youtube.com/watch?v=nOsNxrwPVMQ)
