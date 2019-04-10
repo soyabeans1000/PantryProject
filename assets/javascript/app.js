@@ -17,18 +17,17 @@ const renderIngredients = _ => {
 document.querySelector('#addItem').addEventListener('click', e => {
   e.preventDefault()
 
-    if (document.querySelector('#item1').value != "")
-    {ingredientList.push(document.querySelector('#item1').value)
+  if (document.querySelector('#item1').value != "") {
+    ingredientList.push(document.querySelector('#item1').value)
     document.querySelector('#item1').value = ''
     renderIngredients()
     displayrecipelist()
   }
 
-  
+
 })
 
 renderIngredients()
-
 function displayrecipelist() {
   document.querySelector('#reciepe_container').style.display = ""
   document.querySelector('#reciepe_container').innerHTML = ""
@@ -37,20 +36,10 @@ function displayrecipelist() {
     .then(r => r.json())
     .then(r => {
 
-      console.log(r)
 
-      console.log(r.hits)
       r.hits.forEach(listItem => {
-
-        console.log(listItem)
-
-
-        let articleElm = document.createElement('div')
-
+      let articleElm = document.createElement('div')
         articleElm.className = 'card mb-3'
-
-
-
         articleElm.innerHTML = `<div class="row no-gutters">
                         <div class="col-md-4">
                           <img src="${listItem.recipe.image}" class="card-img" alt="...">
@@ -82,9 +71,8 @@ document.addEventListener('click', e => {
     renderIngredients()
     displayrecipelist()
 
+    if (ingredientList.length === 0)
     document.querySelector('#reciepe_container').style.display = 'none'
-
- }
-
+  }
 })
 
