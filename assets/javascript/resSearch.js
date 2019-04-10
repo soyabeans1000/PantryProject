@@ -14,6 +14,7 @@ document.addEventListener('click', ({ target }) => {
     let search = city + ', ' + state
     // 
     if (target.id === 'submitBtn') {
+        document.querySelector('#foodSearch').style.display = ""
         document.querySelector('#foodSearch').innerHTML = ''
         document.querySelector('#foodSearch').style.color = 'black'
         if (cuisineInput === "" || city === "" || state === "" || search === "") {
