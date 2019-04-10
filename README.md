@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Functionality
 
-## Built With
+## Built With the following API's
 
 * [Edamam](https://developer.edamam.com/) - Food and nutrition database for recipes
 * [Zomato](https://developers.zomato.com/api) - Zomato API to find restaurants 
@@ -16,10 +16,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Authors
 
-* **Mike Anderson** - *Initial work* - [PurpleBooth](https://github.com/soyabeans1000)
-* **Mike Anderson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-* **Mike Anderson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-* **Mike Anderson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Sarika Goyal** - [PurpleBooth](https://github.com/soyabeans1000)
+* **Kayla San Filippo** - [PurpleBooth](https://github.com/kaylasf)
+* **Summer Basehart** - [PurpleBooth](https://github.com/summerbasehart)
+* **Mike Anderson** - [PurpleBooth](https://github.com/mjanders6)
 
 
 ## Acknowledgments
