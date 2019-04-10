@@ -24,10 +24,10 @@ Choose the location that sounds good to eat at.
 
 ## Authors
 
-**Sarika Goyal** - [PurpleBooth](https://github.com/soyabeans1000)
-**Kayla San Filippo** - [PurpleBooth](https://github.com/kaylasf)
-**Summer Basehart** - [PurpleBooth](https://github.com/summerbasehart)
-**Mike Anderson** - [PurpleBooth](https://github.com/mjanders6)
+* **Sarika Goyal** - [PurpleBooth](https://github.com/soyabeans1000)
+* **Kayla San Filippo** - [PurpleBooth](https://github.com/kaylasf)
+* **Summer Basehart** - [PurpleBooth](https://github.com/summerbasehart)
+* **Mike Anderson** - [PurpleBooth](https://github.com/mjanders6)
 
 
 ## Acknowledgments
