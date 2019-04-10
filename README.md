@@ -16,7 +16,7 @@ Whip it Up helps users find recipes through the Edamam API if the user wants to 
 
 Choose the location that sounds good to eat at. 
 
-## Built With the following API's
+## Built with the following API's
 
 * [Edamam](https://developer.edamam.com/) - Food and nutrition database for recipes
 * [Zomato](https://developers.zomato.com/api) - Zomato API to find restaurants 
@@ -24,10 +24,10 @@ Choose the location that sounds good to eat at.
 
 ## Authors
 
-* **Sarika Goyal** - [PurpleBooth](https://github.com/soyabeans1000)
-* **Kayla San Filippo** - [PurpleBooth](https://github.com/kaylasf)
-* **Summer Basehart** - [PurpleBooth](https://github.com/summerbasehart)
-* **Mike Anderson** - [PurpleBooth](https://github.com/mjanders6)
+* **Sarika Goyal** - [soyabeans1000](https://github.com/soyabeans1000)
+* **Kayla San Filippo** - [kaylasf](https://github.com/kaylasf)
+* **Summer Basehart** - [summerbasehart](https://github.com/summerbasehart)
+* **Mike Anderson** - [mjanders6](https://github.com/mjanders6)
 
 
 ## Acknowledgments
