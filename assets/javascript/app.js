@@ -16,10 +16,15 @@ const renderIngredients = _ => {
 
 document.querySelector('#addItem').addEventListener('click', e => {
   e.preventDefault()
-  ingredientList.push(document.querySelector('#item1').value)
-  document.querySelector('#item1').value = ''
-  renderIngredients()
-  displayrecipelist()
+
+    if (document.querySelector('#item1').value != "")
+    {ingredientList.push(document.querySelector('#item1').value)
+    document.querySelector('#item1').value = ''
+    renderIngredients()
+    displayrecipelist()
+  }
+
+  
 })
 
 renderIngredients()
@@ -75,6 +80,11 @@ document.addEventListener('click', e => {
     let delIndex = e.target.getAttribute('data-loc')
     ingredientList.splice(delIndex, 1)
     renderIngredients()
+    displayrecipelist()
+
+    document.querySelector('#reciepe_container').style.display = 'none'
+
  }
 
 })
+
