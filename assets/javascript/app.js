@@ -9,7 +9,7 @@ const renderIngredients = _ => {
     recipeElem.style.padding = '5px'
     recipeElem.className = 'listItem'
     recipeElem.setAttribute('data-loc', i)
-    recipeElem.innerHTML = `${item1}<a href="#"><i class="fa fa-remove" style="font-size:24px;color:red" data-loc="i"></i></a>`
+    recipeElem.innerHTML = `${item1}<a href="#"><i class="fa fa-remove" style="font-size:20px;color:#808080" data-loc="i"></i></a>`
     document.querySelector('#ingredients').append(recipeElem)
   })
 }
