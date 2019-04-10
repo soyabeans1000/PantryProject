@@ -9,7 +9,7 @@ Whip it Up helps users find recipes through the Edamam API if the user wants to 
 * Choose the recipe that you want to cook
 
 ### Find a Restaurant
-Enter the following 
+#### Enter the following 
 * City
 * State
 * Cuisine
