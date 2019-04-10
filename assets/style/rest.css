@@ -1,0 +1,11 @@
+.chalkboard{
+background-color: rgba(129, 129, 129, 0.2);
+text-align: center; 
+}
+.restInput{
+    margin-bottom: 2%;
+}
+a.label{
+    font-weight: 700;
+    color: orangered;
+}

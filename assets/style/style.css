@@ -32,7 +32,8 @@ body{
 .chalkboard{
 	/* height: auto; */
 	/* background-image: url('https://files.slack.com/files-pri/TEF39F7A5-FHLERV1AR/download/4305843.jpg'); */
-	background-color: rgba(0,0,0,0.9)
+	/* background-color: rgba(0,0,0,0.9) */
+	background-color: rgba(129, 129, 129, 0.2);
 
 }
 #title{
@@ -41,49 +42,15 @@ body{
 #hungry{
 	/* position: relative;
 	left: 35%; */
-	margin: 0 auto;
+	margin: auto;
+	color: orangered;
+	text-align: center;
 	
 }
 #for-apples{
 	position: relative;
 	left: 15%;
 	margin-top: 9%;
-}
-@media screen and (min-width:849px) and (max-width: 1000px) {
-	#for-apples {
-	  left: 10%;
-	  margin-top: 6.5%;
-	}
-  }
-  @media screen and (min-width:399px) and (max-width: 850px) {
-	#for-apples {
-	  left: 2%;
-	  margin-top: 7.5%;
-	  
-	}
-	#hungry{
-		display: none;
-	}
-  }
-  @media screen and (min-width:535px) and (max-width: 788px){
-	  #hungry{
-		  display:none;
-	  }
-	  #for-apples{
-		  margin-left: 20%;
-		 /* font-size: 20px;
-		 left: 1%; */
-	  }
-  }
-  @media screen and (min-width:200px) and (max-width: 534px){
-	#hungry{
-		display:none;
-	}
-	#for-apples{
-		margin-left: 20%;
-	   font-size: 20px;
-	   left: 1%;
-	}
 }
 
 h1{
@@ -139,4 +106,4 @@ h1{
 }
 .card-title{
 	color: white;
-}
+} 
