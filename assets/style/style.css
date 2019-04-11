@@ -133,5 +133,23 @@ h1{
 	.add_padding{
 	padding:5px;
 	}
+
+	.containerAll{
+		border-radius:1%;
+		margin-top:25%;
+		margin-bottom: 4%;
+		width:90%;
+		background-color: white;
+		z-index: -1;
+		
+	}
+
+	#hungry{
+		margin-top:10%; 
+	}
+
+	.input{
+		margin-top:20%; 
+	}
 	
 }
