@@ -45,3 +45,21 @@ a.label{
     font-weight: bolder;
 	font-size: 1em;
 }
+
+.hungryText
+    {
+        font-size: 3em;
+        padding-bottom:15px;
+    }
+
+
+@media only screen and (max-width: 640px) {
+
+    .hungryText
+    {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-bottom:20px;
+    }
+
+}
