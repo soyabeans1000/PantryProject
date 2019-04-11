@@ -46,7 +46,7 @@ function displayrecipelist() {
                         </div>
                         <div class="col-md-8">
                           <div class="card-body">
-                            <h5><a href="${listItem.recipe.url}" class="card-title"> ${listItem.recipe.label}</a></h5>
+                            <h5><a href="${listItem.recipe.url}" class="card-title" target="_blank"> ${listItem.recipe.label}</a></h5>
                          <p class="card-text">Source: ${listItem.recipe.source}<br>
                          Calories: ${Math.round(parseInt(listItem.recipe.calories))}
                           <br><a href="https://www.facebook.com/sharer/sharer.php?u=${listItem.recipe.url}" title="Share on Facebook" target="_blank" class="social_media_link" ><i class="fa fa-facebook"></i> Facebook</a><br>
