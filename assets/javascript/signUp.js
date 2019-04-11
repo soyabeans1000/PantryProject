@@ -15,6 +15,7 @@ let db = firebase.firestore()
 document.getElementById('registerSubmit').addEventListener('click', e => {
     e.preventDefault()
 
+    // .trim()?
     let name = document.getElementById('userName').value
     let email = document.getElementById('inputEmail').value
     let password = document.getElementById('inputPassword').value
@@ -31,6 +32,14 @@ document.getElementById('registerSubmit').addEventListener('click', e => {
     // document.getElementById('inputPassword').value = ''
     displayContainer()
 
+})
+
+firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+        let str = document.querySelector('.signInUp').innerHTML;
+        let res = str.replace("Sign In", "Sign Out");
+        document.querySelector(".signInUp").innerHTML = res;
+    }
 })
 
 displayContainer = () => {

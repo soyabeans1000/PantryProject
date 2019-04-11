@@ -9,3 +9,8 @@ a.label{
     font-weight: 700;
     color: orangered;
 }
+#foodSearch{
+    height:700px;
+	overflow:auto;
+	text-align: center;	
+}
