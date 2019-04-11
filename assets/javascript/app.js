@@ -9,7 +9,7 @@ const renderIngredients = _ => {
     recipeElem.style.padding = '5px'
     recipeElem.className = 'listItem'
     recipeElem.setAttribute('data-loc', i)
-    recipeElem.innerHTML = `${item1}<a href="#"><i class="fa fa-remove" style="font-size:20px;color:#808080" data-loc="i"></i></a>`
+    recipeElem.innerHTML = `${item1}<a href="#"><i class="fa fa-remove" style="font-size:20px;color:#808080" data-loc=${i}></i></a>`
     document.querySelector('#ingredients').append(recipeElem)
   })
 }
@@ -66,9 +66,17 @@ function displayrecipelist() {
 
 document.addEventListener('click', e => {
   //if trash button clicked
+console.log(ingredientList)
+
   if (e.target.className === 'fa fa-remove') {
     let delIndex = e.target.getAttribute('data-loc')
+
+    console.log(delIndex)
+
     ingredientList.splice(delIndex, 1)
+
+    console.log(ingredientList)
+
     renderIngredients()
     displayrecipelist()
 
