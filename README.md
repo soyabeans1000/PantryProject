@@ -31,6 +31,6 @@ Choose the location that sounds good to eat at.
 * **Mike Anderson** - [mjanders6](https://github.com/mjanders6)
 
 
-## Acknowledgments
+## Acknowledgments - Video
 
 **Whip it Up** - (https://www.youtube.com/watch?v=nOsNxrwPVMQ)
