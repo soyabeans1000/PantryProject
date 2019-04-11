@@ -82,8 +82,7 @@ document.addEventListener('click', ({ target }) => {
                                                             <span class="sub_title">Rating: </span>${element.restaurant.user_rating.aggregate_rating} out of 5 <br>
                                                             <span class="sub_title">Votes:</span>
                                                             ${element.restaurant.user_rating.votes}  <br>
-                                                            <span class="sub_title">Votes:</span>
-                                                            Average Cost for 2: $ ${element.restaurant.average_cost_for_two}
+                                                            <span class="sub_title">Average Cost for 2:</span> $ ${element.restaurant.average_cost_for_two}
                                                         
                                                     </div>
                                                 </div> 
