@@ -127,6 +127,12 @@ h1{
 	font-size: 0.8em;
 }
 
+.hungryText
+    {
+        font-size: 3em;
+        padding-bottom:15px;
+    }
+
 
 @media only screen and (max-width: 640px) {
 
@@ -149,7 +155,16 @@ h1{
 	}
 
 	.input{
-		margin-top:20%; 
+		margin-top:10%; 
 	}
+
+
+	.hungryText
+	{
+			font-size: 2em;
+			font-weight: bold;
+			padding-bottom:20px;
+	}
+
 	
 }
