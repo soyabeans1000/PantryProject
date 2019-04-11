@@ -9,7 +9,7 @@ const renderIngredients = _ => {
     recipeElem.style.padding = '5px'
     recipeElem.className = 'listItem'
     recipeElem.setAttribute('data-loc', i)
-    recipeElem.innerHTML = `${item1}<a href="#"><i class="fa fa-remove" style="font-size:24px;color:red" data-loc="i"></i></a>`
+    recipeElem.innerHTML = `${item1}<a href="#"><i class="fa fa-remove" style="font-size:20px;color:#808080" data-loc=${i}></i></a>`
     document.querySelector('#ingredients').append(recipeElem)
   })
 }
@@ -36,7 +36,7 @@ function displayrecipelist() {
     .then(r => r.json())
     .then(r => {
 
-
+      console.log(r)
       r.hits.forEach(listItem => {
       let articleElm = document.createElement('div')
         articleElm.className = 'card mb-3'
@@ -46,10 +46,11 @@ function displayrecipelist() {
                         </div>
                         <div class="col-md-8">
                           <div class="card-body">
-                            <h5 class="card-title"><a href="${listItem.recipe.url}"> ${listItem.recipe.label}</a></h5>
-                         <p class="card-text">Source:${listItem.recipe.source}<br>
-                         Calories:${Math.round(parseInt(listItem.recipe.calories))}
-                          <br><a href="https://www.facebook.com/sharer/sharer.php?u=${listItem.recipe.url}" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a><a href="http://twitter.com/home?status=${listItem.recipe.url}" title="Share on Twitter" target="_blank" class="btn btn-twitter"><i class="fa fa-twitter"></i> Twitter</a></p>
+                            <h5><a href="${listItem.recipe.url}" class="card-title" target="_blank"> ${listItem.recipe.label}</a></h5>
+                         <p class="card-text">Source: ${listItem.recipe.source}<br>
+                         Calories: ${Math.round(parseInt(listItem.recipe.calories))}
+                          <br><a href="https://www.facebook.com/sharer/sharer.php?u=${listItem.recipe.url}" title="Share on Facebook" target="_blank" class="social_media_link" ><i class="fa fa-facebook"></i> Facebook</a><br>
+                          <a href="http://twitter.com/home?status=${listItem.recipe.url}" title="Share on Twitter" target="_blank" class="social_media_link"><i class="fa fa-twitter"></i> Twitter</a></p>
                             </div>
                         </div>
                       </div>`
@@ -65,9 +66,17 @@ function displayrecipelist() {
 
 document.addEventListener('click', e => {
   //if trash button clicked
+console.log(ingredientList)
+
   if (e.target.className === 'fa fa-remove') {
     let delIndex = e.target.getAttribute('data-loc')
+
+    console.log(delIndex)
+
     ingredientList.splice(delIndex, 1)
+
+    console.log(ingredientList)
+
     renderIngredients()
     displayrecipelist()
 

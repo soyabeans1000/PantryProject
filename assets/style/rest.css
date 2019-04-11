@@ -14,3 +14,52 @@ a.label{
 	overflow:auto;
 	text-align: center;	
 }
+
+.card
+{
+    margin:10px;
+}
+
+
+.card-title{
+	color: olivedrab;
+    font-size: 1.2em;
+    font-weight:bolder;
+} 
+
+.card-body
+{
+	color: goldenrod;
+	font-size: 1em;
+}
+
+.rest_name
+{
+    color:black;
+	font-size: 1.2em;
+}
+
+.sub_title
+{
+    color: goldenrod;
+    font-weight: bolder;
+	font-size: 1em;
+}
+
+.hungryText
+    {
+        font-size: 3em;
+        padding-bottom:15px;
+    }
+
+
+@media only screen and (max-width: 640px) {
+
+    .hungryText
+    {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-bottom:20px;
+    }
+
+}
