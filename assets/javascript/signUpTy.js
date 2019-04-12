@@ -29,7 +29,9 @@ signUpBtn.addEventListener('click', e=> {
 });
 
 // Add signIn Event
-logInBtn.addEventListener('click', e=> {
+
+// firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
+logInBtn.addEventListener('click', e => {
     // e.preventDefault();
     // Get email and password
     const email = signInEmail.value;
@@ -47,10 +49,11 @@ document.querySelector('.signOut').addEventListener('click', e => {
     document.querySelector('.signInUp').style.display = '';
 })
 
-// Add a realtime listener
+// Add a realtime listener//pass through callback function to show every state changes. 
 firebase.auth().onAuthStateChanged(firebaseUser => {
     if (firebaseUser) {
         console.log(firebaseUser);
+        window.sessionStorage.setItem("loggedIn", true);
         document.querySelector('.signOut').style["display"] = '';
         document.querySelector('.signInUp').style.display = 'none';
     } else {
@@ -99,7 +102,7 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
 // })
 
 
-    
+
 
 // firebase.auth().onAuthStateChanged(function(user) {
 //     if (user) {
