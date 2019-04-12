@@ -16,21 +16,20 @@ const signInPass = document.getElementById('modalPassword')
 const signUpBtn = document.getElementById('registerSubmit')
 const logInBtn = document.getElementById('logInBtn')
 
-// Add signup event
-signUpBtn.addEventListener('click', e=> {
-    e.preventDefault();
-    // Get email and password
-    const email = txtEmail.value;
-    const password = txtPassword.value;
-    const auth = firebase.auth();
-    // sign up 
-    const promise = auth.createUserWithEmailAndPassword(email, password);
-    promise.catch(e => console.log(e.message));
-});
+// // Add signup event
+// signUpBtn.addEventListener('click', e=> {
+//     e.preventDefault();
+//     // Get email and password
+//     const email = txtEmail.value;
+//     const password = txtPassword.value;
+//     const auth = firebase.auth();
+//     // sign up 
+//     const promise = auth.createUserWithEmailAndPassword(email, password);
+//     promise.catch(e => console.log(e.message));
+// });
 
 // Add signIn Event
 
-// firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
 logInBtn.addEventListener('click', e => {
     // e.preventDefault();
     // Get email and password
@@ -39,15 +38,30 @@ logInBtn.addEventListener('click', e => {
     const auth = firebase.auth();
     // sign up 
     const promise = auth.signInWithEmailAndPassword(email, password);
-    promise.catch(e => console.log(e.message));
+    promise.then(e => {
+        firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
+            .then(function () {
+                // Existing and future Auth states are now persisted in the current
+                // session only. Closing the window would clear any existing state even
+                // if a user forgets to sign out.
+                // ...
+                // New sign-in will be persisted with session persistence.
+                return firebase.auth().signInWithEmailAndPassword(email, password);
+            })
+            .catch(function (error) {
+                // Handle Errors here.
+                var errorCode = error.code;
+                var errorMessage = error.message;
+            });
+    }).catch(e => console.log(e.message));
 });
 
 // Add signout event
-document.querySelector('.signOut').addEventListener('click', e => {
-    firebase.auth().signOut();
-    document.querySelector('.signOut').style["display"] = 'none';
-    document.querySelector('.signInUp').style.display = '';
-})
+// document.querySelector('.signOut').addEventListener('click', e => {
+//     firebase.auth().signOut();
+//     document.querySelector('.signOut').style["display"] = 'none';
+//     document.querySelector('.signInUp').style.display = '';
+// })
 
 // Add a realtime listener//pass through callback function to show every state changes. 
 firebase.auth().onAuthStateChanged(firebaseUser => {
@@ -60,6 +74,23 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
         console.log('not logged in');
     }
 });
+
+// Add persistence
+
+// firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
+//   .then(function() {
+//     // Existing and future Auth states are now persisted in the current
+//     // session only. Closing the window would clear any existing state even
+//     // if a user forgets to sign out.
+//     // ...
+//     // New sign-in will be persisted with session persistence.
+//     return firebase.auth().signInWithEmailAndPassword(email, password);
+//   })
+//   .catch(function(error) {
+//     // Handle Errors here.
+//     var errorCode = error.code;
+//     var errorMessage = error.message;
+// });
 
 
 

@@ -31,14 +31,14 @@ renderIngredients()
 function displayrecipelist() {
   document.querySelector('#reciepe_container').style.display = ""
   document.querySelector('#reciepe_container').innerHTML = ""
-  console.log(`https://api.edamam.com/search?q=${ingredientList}&app_id=4d9c5eb2&app_key=90e03d78717765f04108f5baf0340f64`)
-  fetch(`https://api.edamam.com/search?q=${ingredientList}&app_id=4d9c5eb2&app_key=90e03d78717765f04108f5baf0340f64`)
+  console.log(`https://api.edamam.com/search?q=${ingredientList}&app_id=b6b1f584&app_key=76f1fc4f26d6c858b5e6c35acd8c2180`)
+  fetch(`https://api.edamam.com/search?q=${ingredientList}&app_id=b6b1f584&app_key=76f1fc4f26d6c858b5e6c35acd8c2180`)
     .then(r => r.json())
     .then(r => {
 
       console.log(r)
       r.hits.forEach(listItem => {
-      let articleElm = document.createElement('div')
+        let articleElm = document.createElement('div')
         articleElm.className = 'card mb-3'
         articleElm.innerHTML = `<div class="row no-gutters">
                         <div class="col-md-4">
@@ -66,7 +66,7 @@ function displayrecipelist() {
 
 document.addEventListener('click', e => {
   //if trash button clicked
-console.log(ingredientList)
+  console.log(ingredientList)
 
   if (e.target.className === 'fa fa-remove') {
     let delIndex = e.target.getAttribute('data-loc')
@@ -81,7 +81,7 @@ console.log(ingredientList)
     displayrecipelist()
 
     if (ingredientList.length === 0)
-    document.querySelector('#reciepe_container').style.display = 'none'
+      document.querySelector('#reciepe_container').style.display = 'none'
   }
 })
 
