@@ -39,8 +39,8 @@ function displayrecipelist() {
 
       if (r.count === 0)
       {
-      console.log('none') 
-      document.querySelector('#reciepe_container').innerHTML = "No Recipes Found. Please change your ingredients"
+        document.querySelector('#reciepe_container').innerHTML = "No Recipes Found. Please change your ingredients"
+        document.querySelector('#reciepe_container').style.height = '100px'
       }
       else 
     {
