@@ -59,11 +59,11 @@ document.addEventListener('click', ({ target }) => {
                             fetch(`https://developers.zomato.com/api/v2.1/search?count=10&lat=${lat}&lon=${lon}&radius=${radius}&cuisines=${cuisine_id}&sort=rating&order=desc&apikey=${key}`)
                                 .then(r => r.json())
                                 .then(r => {
-                                    // console.log(r);
+                                    
                                     let resCall = r.restaurants
-                                    // document.querySelector('#foodSearch').innerHTML = ''
+                                    
                                     resCall.forEach(element => {
-                                        // console.log(element.restaurant)
+                                        
 
                                         let resElem = document.createElement('div')
 
@@ -89,7 +89,7 @@ document.addEventListener('click', ({ target }) => {
                                             </div>
                                         `
 
-
+                                        document.querySelector('#foodSearch').style.height = '500px'
                                         document.querySelector('#foodSearch').append(resElem)
                                     });
                                 })
