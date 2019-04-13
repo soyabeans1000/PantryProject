@@ -67,6 +67,7 @@ document.addEventListener('click', ({ target }) => {
                                         // console.log(element.restaurant)
                                         // coordinates.push([element.restaurant.location.latitude, element.restaurant.location.longitude])
                                         coordinates.push([element.restaurant])
+                                        
                                         let resElem = document.createElement('div')
 
                                         resElem.innerHTML = `
