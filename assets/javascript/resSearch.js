@@ -1,7 +1,8 @@
 
 // console.log(target);
-accessToken = 'pk.eyJ1IjoibWphbmRlcnM2IiwiYSI6ImNqdHRoYnpmbjFicjg0NG80bnJ4OTQ0ejMifQ.EnYDyXKQdBO7A1JaBUMXsQ'
+let accessToken = 'pk.eyJ1IjoibWphbmRlcnM2IiwiYSI6ImNqdHRoYnpmbjFicjg0NG80bnJ4OTQ0ejMifQ.EnYDyXKQdBO7A1JaBUMXsQ'
 let key = `e424ea0eb9b536ada64c484c74ceee72`
+let coordinates = []
 
 document.addEventListener('click', ({ target }) => {
     // 
@@ -64,7 +65,8 @@ document.addEventListener('click', ({ target }) => {
                                     // document.querySelector('#foodSearch').innerHTML = ''
                                     resCall.forEach(element => {
                                         // console.log(element.restaurant)
-
+                                        // coordinates.push([element.restaurant.location.latitude, element.restaurant.location.longitude])
+                                        coordinates.push([element.restaurant])
                                         let resElem = document.createElement('div')
 
                                         resElem.innerHTML = `
