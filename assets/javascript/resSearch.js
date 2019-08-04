@@ -1,6 +1,6 @@
 
 // console.log(target);
-accessToken = 'pk.eyJ1IjoibWphbmRlcnM2IiwiYSI6ImNqdHRoYnpmbjFicjg0NG80bnJ4OTQ0ejMifQ.EnYDyXKQdBO7A1JaBUMXsQ'
+accessToken = 'pk.eyJ1IjoibWphbmRlcnM2IiwiYSI6ImNqeXhqeGkwczA3d2UzbXB1YXk2amNobjcifQ.qnWD9-sZ4xqmP8Tm6VTe5g'
 let key = `e424ea0eb9b536ada64c484c74ceee72`
 
 document.addEventListener('click', ({ target }) => {
