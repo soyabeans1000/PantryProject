@@ -26,13 +26,24 @@ document.querySelector('#addItem').addEventListener('click', e => {
 })
 
 renderIngredients()
+
 function displayrecipelist() {
   document.querySelector('#reciepe_container').style.display = ""
   document.querySelector('#reciepe_container').innerHTML = ""
   console.log(`https://api.edamam.com/search?q=${ingredientList}&app_id=4d9c5eb2&app_key=90e03d78717765f04108f5baf0340f64`)
   fetch(`https://api.edamam.com/search?q=${ingredientList}&app_id=4d9c5eb2&app_key=90e03d78717765f04108f5baf0340f64`)
-    .then(r => r.json())
+  .then(r => r.json())
     .then(r => {
+
+      console.log(r + r.count)
+
+      if (r.count === 0)
+      {
+        document.querySelector('#reciepe_container').innerHTML = "No Recipes Found. Please change your ingredients"
+        document.querySelector('#reciepe_container').style.height = '100px'
+      }
+      else 
+    {
       r.hits.forEach(listItem => {
         let articleElm = document.createElement('div')
         articleElm.className = 'card mb-3'
@@ -55,10 +66,14 @@ function displayrecipelist() {
 
       })
 
+    }
     })
+  
     //catch any errors
     .catch(e => console.error(e))
-}
+
+
+  }
 
 document.addEventListener('click', e => {
 

@@ -18,8 +18,10 @@ document.addEventListener('click', ({ target }) => {
         document.querySelector('#foodSearch').innerHTML = ''
         document.querySelector('#foodSearch').style.color = 'black'
         if (cuisineInput === "" || city === "" || state === "" || search === "") {
-            document.querySelector('#foodSearch').innerHTML = "Enter all information"
+            document.querySelector('#foodSearch').innerHTML = "Please fill in all the search information"
             document.querySelector('#foodSearch').style.color = 'red'
+            document.querySelector('#foodSearch').style.height = '100px'
+
         } else {
 
             fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/"${search}".json?access_token=${accessToken}&country=us&place`)
@@ -46,24 +48,22 @@ document.addEventListener('click', ({ target }) => {
                             let cuisineName = r.cuisines
                             cuisineName.forEach((element) => {
                                 if (element.cuisine.cuisine_name === cuisineInput) {
-                                    // console.log(element);
-                                    // console.log(element.cuisine.cuisine_id);
+                                    
                                     cuisine_id = element.cuisine.cuisine_id
                                 }
                             })
                             return { cuisine_id }
                         })
                         .then(({ cuisine_id }) => {
-                            // console.log(lon, lat, cuisine_id);
                             let radius = 1609 // in meters
                             fetch(`https://developers.zomato.com/api/v2.1/search?count=10&lat=${lat}&lon=${lon}&radius=${radius}&cuisines=${cuisine_id}&sort=rating&order=desc&apikey=${key}`)
                                 .then(r => r.json())
                                 .then(r => {
-                                    // console.log(r);
+                                    
                                     let resCall = r.restaurants
-                                    // document.querySelector('#foodSearch').innerHTML = ''
+                                    
                                     resCall.forEach(element => {
-                                        // console.log(element.restaurant)
+                                        
 
                                         let resElem = document.createElement('div')
 
@@ -89,7 +89,7 @@ document.addEventListener('click', ({ target }) => {
                                             </div>
                                         `
 
-
+                                        document.querySelector('#foodSearch').style.height = '500px'
                                         document.querySelector('#foodSearch').append(resElem)
                                     });
                                 })
