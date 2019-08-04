@@ -1,5 +1,5 @@
-# Hungry Buddy
-## https://mjanders6.github.io/PantryProject/
+# Whip it Up!
+## https://soyabeans1000.github.io/PantryProject/
 
 Whip it Up helps users find recipes through the Edamam API if the user wants to cook their own food. If the user does not want to cook they can choose to find a restaurant in the city and state of their choice with a given cuisine.
 
