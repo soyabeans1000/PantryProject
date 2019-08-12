@@ -16,7 +16,7 @@ Whip it Up helps users find recipes through the Edamam API if the user wants to 
 * State
 * Cuisine
 
-Choose the location that sounds good to eat at. 
+### ScreenShots
 
 ## Built with the following API's
 
